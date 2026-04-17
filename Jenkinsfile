@@ -37,7 +37,7 @@ pipeline {
         stage('Run Docker Container') {
             steps {
                 echo 'Running container...'
-                sh 'docker run -d -p 8080:80 --name mlops-container mlops-app'
+                sh 'docker run -d -p 8081:80 --name mlops-container mlops-app'
             }
         }
     }
